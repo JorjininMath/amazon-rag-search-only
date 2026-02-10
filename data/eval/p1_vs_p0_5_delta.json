@@ -1,0 +1,94 @@
+{
+  "before_file": "data/eval/p0_5_summary_before_p1.json",
+  "after_file": "data/eval/p0_5_summary.json",
+  "overall": {
+    "hit_at_1": {
+      "before": 0.5,
+      "after": 0.8,
+      "delta": 0.30000000000000004
+    },
+    "hit_at_3": {
+      "before": 0.9,
+      "after": 0.9,
+      "delta": 0.0
+    },
+    "hit_at_5": {
+      "before": 0.9,
+      "after": 0.9,
+      "delta": 0.0
+    },
+    "avg_best_rank": {
+      "before": 1.4444444444444444,
+      "after": 1.1111111111111112,
+      "delta": -0.33333333333333326
+    }
+  },
+  "by_intent": {
+    "compare": {
+      "hit_at_1": {
+        "before": 0.0,
+        "after": 1.0,
+        "delta": 1.0
+      },
+      "hit_at_3": {
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      "hit_at_5": {
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      "avg_best_rank": {
+        "before": 2.0,
+        "after": 1.0,
+        "delta": -1.0
+      }
+    },
+    "general": {
+      "hit_at_1": {
+        "before": 0.75,
+        "after": 0.75,
+        "delta": 0.0
+      },
+      "hit_at_3": {
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      "hit_at_5": {
+        "before": 1.0,
+        "after": 1.0,
+        "delta": 0.0
+      },
+      "avg_best_rank": {
+        "before": 1.25,
+        "after": 1.25,
+        "delta": 0.0
+      }
+    },
+    "negative": {
+      "hit_at_1": {
+        "before": 0.4,
+        "after": 0.8,
+        "delta": 0.4
+      },
+      "hit_at_3": {
+        "before": 0.8,
+        "after": 0.8,
+        "delta": 0.0
+      },
+      "hit_at_5": {
+        "before": 0.8,
+        "after": 0.8,
+        "delta": 0.0
+      },
+      "avg_best_rank": {
+        "before": 1.5,
+        "after": 1.0,
+        "delta": -0.5
+      }
+    }
+  }
+}

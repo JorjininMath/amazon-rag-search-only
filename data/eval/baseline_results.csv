@@ -1,0 +1,11 @@
+id,query,top_k,low_rating_count,meets_expectation,notes
+q01,what users dislike about this product,5,4,yes,Meets rule: two low-rating results and clear complaint wording present.
+q02,negative review for this product,5,5,yes,Meets rule: three low-rating results and not all positive evidence.
+q03,common complaints in these beauty reviews,5,1,no,"Fails rule: low-rating ratio is 20% (1/5), below expected >=40%."
+q04,is this product good for sensitive skin,5,0,yes,Meets rule: multiple results explicitly mention sensitive skin and irritation context.
+q05,how long does the scent last,5,0,yes,Meets rule: several results discuss scent longevity and duration.
+q06,does this product feel greasy on skin,5,0,yes,Meets rule: multiple results directly discuss greasy/oily/non-greasy texture.
+q07,compare positive and negative feedback about this product,5,2,yes,Meets rule: positive and negative evidence both appear in top-k.
+q08,what do users say about irritation or allergy,5,5,yes,Meets rule: top-k includes direct irritation/allergy reports.
+q09,is this product worth buying,5,0,yes,"Meets rule: evidence covers value, performance, and drawbacks for purchase judgment."
+q10,what are the most frequent drawbacks,5,2,yes,"Borderline yes: drawbacks are present and non-generic, but frequency aggregation is still weak."

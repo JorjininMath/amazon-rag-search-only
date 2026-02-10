@@ -1,0 +1,4 @@
+datasets==2.19.2
+llama-index
+llama-index-embeddings-huggingface
+sentence-transformers

@@ -1,0 +1,28 @@
+{
+  "total_queries": 10,
+  "hit_at_1": 0.8,
+  "hit_at_3": 0.9,
+  "hit_at_5": 0.9,
+  "hit_at_k": 0.9,
+  "avg_best_rank": 1.1111111111111112,
+  "by_intent": {
+    "negative": {
+      "hit_at_1": 0.8,
+      "hit_at_3": 0.8,
+      "hit_at_5": 0.8,
+      "avg_best_rank": 1.0
+    },
+    "general": {
+      "hit_at_1": 0.75,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "avg_best_rank": 1.25
+    },
+    "compare": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "avg_best_rank": 1.0
+    }
+  }
+}

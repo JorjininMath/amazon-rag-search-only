@@ -1,0 +1,24 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS / editor artifacts
+.DS_Store
+.idea/
+.vscode/
+
+# Runtime output / logs
+*.log
+
+# Generated data artifacts
+data/cache/
+data/index/
+data/index_open/
+
+# Optional: uncomment if you do not want processed data in git
+# data/processed/
