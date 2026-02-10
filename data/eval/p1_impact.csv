@@ -1,0 +1,11 @@
+id,intent,query,detected_intent,hit_before,hit_after,best_rank_before,best_rank_after,delta_rank,asin_before,asin_after,asin_changed,polarity_before,polarity_after,polarity_changed
+q01,negative,what users dislike about this product,negative,1,1,1,1,0,B0085RKNS4,B0085RKNS4,no,negative,negative,no
+q02,negative,negative review for this product,negative,1,1,2,1,1,B0085RKNS4,B0085RKNS4,no,negative,negative,no
+q03,negative,common complaints in these beauty reviews,negative,0,0,,,,,,no,unknown,unknown,no
+q04,general,is this product good for sensitive skin,general,1,1,1,1,0,B07W1WJZFG,B07W1WJZFG,no,positive,positive,no
+q05,general,how long does the scent last,general,1,1,1,1,0,B08ZSR9HLF,B08ZSR9HLF,no,neutral,neutral,no
+q06,general,does this product feel greasy on skin,general,1,1,1,1,0,B09KX5N1DR,B09KX5N1DR,no,positive,positive,no
+q07,compare,compare positive and negative feedback about this product,compare,1,1,2,1,1,B07VG2W8TT,B07VG2W8TT,no,negative,negative,no
+q08,negative,what do users say about irritation or allergy,negative,1,1,1,1,0,B08DXLRTSB,B09XBSDCXP,yes,neutral,negative,yes
+q09,general,is this product worth buying,general,1,1,2,2,0,B07W1WJZFG,B07W1WJZFG,no,positive,positive,no
+q10,negative,what are the most frequent drawbacks,negative,1,1,2,1,1,B073WQHFXB,B073WQHFXB,no,negative,negative,no

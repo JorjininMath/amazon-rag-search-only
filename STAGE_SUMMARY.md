@@ -127,6 +127,16 @@
       - 改动前：`hit@1 = 0.00` / `hit@3 = 1.00` / `hit@5 = 1.00` / `avg_best_rank = 2.00`
       - 改动后：`hit@1 = 1.00` / `hit@3 = 1.00` / `hit@5 = 1.00` / `avg_best_rank = 1.00`
       - 结论：`compare` top-1 稳定性已修复
+  - P1.5 诊断报告（per-query impact），见 `data/eval/p1_impact.csv`：
+    - 对每条 golden query，同时记录：
+      - `best_rank_before`：纯相似度排序下命中证据的排名（不经过 rerank）
+      - `best_rank_after`：经过 intent-aware rerank 后命中证据的排名
+      - `asin_before/asin_after`：命中证据所在商品是否发生变化
+      - `polarity_before/polarity_after`：命中证据情感极性是否发生变化
+    - 关键观察：
+      - q02 / q07 / q10：`best_rank` 从 2 提升到 1，`asin` 与极性保持不变 → rerank 主要是把正确证据提前
+      - q08：`best_rank` 仍为 1，但 `asin` 与极性从“中性”切换为“负面” → rerank 选择了更符合负向意图的证据
+      - q03：在当前 target 规则下，rerank 前后均未命中 → 可作为后续规则/数据侧误差分析样本
 8. 新增自动对比脚本（避免手工抄数）：
    - `compare_eval.py`
    - 默认读取：

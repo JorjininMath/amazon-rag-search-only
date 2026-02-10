@@ -160,6 +160,24 @@ python compare_eval.py
 - `data/eval/p1_vs_p0_5_delta.json`
 - 终端打印整体 `hit@1/3/5` 与 `avg_best_rank` 的 before/after delta
 
+### 4.4 P1.5：per-query 影响诊断（可选）
+
+如需分析“每条 query 上 rerank 具体做了什么”，可以运行：
+
+```bash
+python p1_impact_report.py
+```
+
+输出：
+
+- `data/eval/p1_impact.csv`
+  - 对每条 golden query 记录：
+    - `best_rank_before` / `best_rank_after`
+    - `asin_before` / `asin_after`
+    - `polarity_before` / `polarity_after`
+
+适合用来在报告/博客中展示 P1 改动对单条查询的具体影响。
+
 ---
 
 ## 5. 当前阶段定位与下一步
